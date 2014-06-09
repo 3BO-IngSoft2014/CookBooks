@@ -1,0 +1,8 @@
+c:\users\ayelen\documents\visual studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\bin\Debug\LibrosCocina_3BO.exe.config
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\bin\Debug\LibrosCocina_3BO.exe
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\bin\Debug\LibrosCocina_3BO.pdb
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.csprojResolveAssemblyReference.cache
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.Properties.Resources.resources
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.csproj.GenerateResource.Cache
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.exe
+C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.pdb
