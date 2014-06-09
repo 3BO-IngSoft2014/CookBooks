@@ -26,3 +26,33 @@ nombre VARCHAR(45) NULL ,
 
 PRIMARY KEY (autor_id) );
 
+CREATE TABLE sistema_libros_cocina.Usuario(
+
+id_Usuario INT NOT NULL AUTO_INCREMENT ,
+
+is_Registrado CHAR(1) ,
+
+nombre VARCHAR(45) NULL , 
+
+apellido VARCHAR(45) NULL ,
+
+fecha_nac DATE ,
+
+email VARCHAR(45) ,
+
+telefono INT NULL ,
+
+direccion VARCHAR (45) ,
+
+PRIMARY KEY (id_Usuario) );
+
+
+
+
+
+
+
+
+
+
+

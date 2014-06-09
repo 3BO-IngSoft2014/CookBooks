@@ -6,3 +6,6 @@ C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCoc
 C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.csproj.GenerateResource.Cache
 C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.exe
 C:\Users\ayelen\Documents\Visual Studio 2012\Projects\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.pdb
+C:\Users\ayelen\CookBooks\3BO-ABM-LIBRO-AUTORES\LibrosCocina_3BO\LibrosCocina_3BO\bin\Debug\LibrosCocina_3BO.exe.config
+C:\Users\ayelen\CookBooks\3BO-ABM-LIBRO-AUTORES\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.exe
+C:\Users\ayelen\CookBooks\3BO-ABM-LIBRO-AUTORES\LibrosCocina_3BO\LibrosCocina_3BO\obj\Debug\LibrosCocina_3BO.pdb

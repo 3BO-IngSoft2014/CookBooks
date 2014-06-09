@@ -70,6 +70,48 @@ namespace LibrosCocina_3BO
             this.ejecutarQuery(Query);
         }
 
+        public void crearUsuario(int Usuario_id, String nombre, String apellido, String fecha_nac, String email, int telefono, String direccion)
+        {
+            if (isRegistrado(Usuario_id) == "N")
+            {
+                String Query = "INSERT INTO `sistema_libros_cocina`.`Usuario` (`is_Registrado`)(`nombre`) (`apellido`) (`fecha_nac`) (`email`) (`telefono`) (`direccion`) VALUES (" + "'" + "S" + "'" + "  " + "'" + nombre + "'" + " " + "'" + apellido + "'" + " " + "'" + fecha_nac + "'" + " " + "'" + email + "'" + " " + "'" + telefono + "'" + " " + "'" + direccion + "'" + ")" + ";";
+                this.ejecutarQuery(Query);
+
+            }else{
+
+
+
+
+           
+        }
+
+        public void eliminarUsuario(int autorid)
+        {
+            String Query = "DELETE FROM `sistema_libros_cocina`.`Libros` WHERE libro_id=" + autorid + ";";
+            this.ejecutarQuery(Query);
+        }
+
+        public void modificarUsuario(String nombre_autor, int autorid)
+        {
+            String Query = "UPDATE `sistema_libros_cocina`.`Libros` SET `nombre` = " + nombre_autor + " WHERE libro_id=" + autorid + ";";
+            this.ejecutarQuery(Query);
+        }
+
+          
+
+        public String isRegistrado(int Usuario_id){
+
+            String Query = "SELECT `is_registrado` FROM `sistema_libros_cocina`.`Usuario` WHERE Usuario_id=" + Usuario_id + ";";
+            this.ejecutarQuery(Query);
+
+            return Query;
+        
+        }
+
+
+
+
+
 
         public void ejecutarQuery(String Query)
         {
