@@ -9,14 +9,15 @@ using System.Collections.Generic;
 
 namespace LibrosCocina_3BO
 {
-    class DBManager
+     public class DBManager
     {
         MySqlConnection conexion;
         String servidor = "localhost";
         String basededatos = "sistema_libros_cocina";
         String usuario = "root";
         String contraseña = "123456";
-        MySqlDataReader rdr = null;
+        //MySqlDataReader rdr = null;
+        //MySqlCommand command;
 
         public void inicilizar()
         {
@@ -24,7 +25,7 @@ namespace LibrosCocina_3BO
             conexion = new MySqlConnection(Conexionstring);
             try
             {
-                //conexion.Open();
+               conexion.Open();
             }
             catch (MySqlException ex)
             {
@@ -32,86 +33,65 @@ namespace LibrosCocina_3BO
             }
         }
 
-        public void crearLibro(String nombre_libro)
+            
+        public void crearLibro(int isbn, String nombre_libro,int stock, String editorial, int precio)
         {
-            String Query = "INSERT INTO `sistema_libros_cocina`.`Libros` (`nombre`) VALUES (" + "'" + nombre_libro + "'" + ")" + ";";
+            String Query = "INSERT INTO " + basededatos +".Libros (lib_isbn,lib_nombre,lib_stock,lib_ventas,lib_editorial, lib_edicion,lib_precio VALUES( " + "'" + isbn  + "'" + nombre_libro  + "'" + stock  + "'" + editorial  + "'" + precio + "');"; 
+            this.ejecutarQuery(Query);            
+        }
+
+        public void crearLibro(int isbn, String nombre_libro,int stock, String editorial) 
+        {
+            this.crearLibro(isbn, nombre_libro, stock, editorial, 0);
+        }
+
+        public void eliminarLibro(int isbn)
+        {
+            String Query = "DELETE FROM `sistema_libros_cocina`.`Libros` WHERE lib_isbn ==" + isbn + ";";
             this.ejecutarQuery(Query);
         }
 
-        public void eliminarLibro(int libroid)
+        public void modificarLibro(int isbn, string nombre, int stock, string editorial, int edicion, int precio)
         {
-            String Query = "DELETE FROM `sistema_libros_cocina`.`Libros` WHERE libro_id=" + libroid + ";";
+            String Query = "UPDATE `sistema_libros_cocina`.`Libros` SET `lib_nombre` = " + nombre + " SET `lib_stock` = " + stock + " SET `lib_editorial` = " + editorial + " SET `lib_edicion` = " + edicion +" SET `precio` = " + precio + " WHERE lib_isbn=" + isbn + ";";
             this.ejecutarQuery(Query);
         }
 
-        public void modificarLibro(String nombre_libro, int precio, String editorial, int libroid)
+        public void buscarLibrosMasVendidos()
         {
-            String Query = "UPDATE `sistema_libros_cocina`.`Libros` SET `nombre` = " + nombre_libro + " SET `precio` = " + precio + " SET `editorial` = " + editorial + " WHERE libro_id=" + libroid + ";";
+            // LIBROS MAS VENDIDOS (TAREA DE Luciano)
+         
+        }
+
+        public void buscarLibroPorNombre(String unNombre)
+        {
+            
+            //     SIN REALIZAR AUN
+        }
+
+        public void crearAutor(string nombre, string apellido)
+        {
+            String Query = "INSERT INTO " + basededatos + ".`Autores` (`nombre`) VALUES (" + "'" + nombre + "'" + "'" + apellido + "' );";
             this.ejecutarQuery(Query);
         }
 
-
-
-        public void crearAutor(String nombre_autor)
+        public void eliminarAutor(int id)
         {
-            String Query = "INSERT INTO `sistema_libros_cocina`.`Autores` (`nombre`) VALUES (" + "'" + nombre_autor + "'" + ")" + ";";
+            String Query = "DELETE FROM `sistema_libros_cocina`.`Autores` WHERE aut_id=" + id + ";";
             this.ejecutarQuery(Query);
         }
 
-        public void eliminarAutor(int autorid)
+        public void modificarAutor(int id, String nombre, String apellido )
         {
-            String Query = "DELETE FROM `sistema_libros_cocina`.`Libros` WHERE libro_id=" + autorid + ";";
+            String Query = "UPDATE `sistema_libros_cocina`.`Autores` SET `aut_nombre` = " + nombre + " SET `aut_apellido` = " + apellido + " WHERE aut_id ==" + id + ";";
             this.ejecutarQuery(Query);
         }
 
-        public void modificarAutor(String nombre_autor, int autorid)
+        public void mapearAutoresYLibros()
         {
-            String Query = "UPDATE `sistema_libros_cocina`.`Libros` SET `nombre` = " + nombre_autor + " WHERE libro_id=" + autorid + ";";
-            this.ejecutarQuery(Query);
-        }
-
-        public void crearUsuario(int Usuario_id, String nombre, String apellido, String fecha_nac, String email, int telefono, String direccion)
-        {
-            if (isRegistrado(Usuario_id) == "N")
-            {
-                String Query = "INSERT INTO `sistema_libros_cocina`.`Usuario` (`is_Registrado`)(`nombre`) (`apellido`) (`fecha_nac`) (`email`) (`telefono`) (`direccion`) VALUES (" + "'" + "S" + "'" + "  " + "'" + nombre + "'" + " " + "'" + apellido + "'" + " " + "'" + fecha_nac + "'" + " " + "'" + email + "'" + " " + "'" + telefono + "'" + " " + "'" + direccion + "'" + ")" + ";";
-                this.ejecutarQuery(Query);
-
-            }else{
-
-
-
-
-           
-        }
-
-        public void eliminarUsuario(int autorid)
-        {
-            String Query = "DELETE FROM `sistema_libros_cocina`.`Libros` WHERE libro_id=" + autorid + ";";
-            this.ejecutarQuery(Query);
-        }
-
-        public void modificarUsuario(String nombre_autor, int autorid)
-        {
-            String Query = "UPDATE `sistema_libros_cocina`.`Libros` SET `nombre` = " + nombre_autor + " WHERE libro_id=" + autorid + ";";
-            this.ejecutarQuery(Query);
-        }
-
+         //      SIN REALIZAR AUN
           
-
-        public String isRegistrado(int Usuario_id){
-
-            String Query = "SELECT `is_registrado` FROM `sistema_libros_cocina`.`Usuario` WHERE Usuario_id=" + Usuario_id + ";";
-            this.ejecutarQuery(Query);
-
-            return Query;
-        
         }
-
-
-
-
-
 
         public void ejecutarQuery(String Query)
         {
@@ -121,6 +101,54 @@ namespace LibrosCocina_3BO
             conexion.Close();
         }
 
+        public void quitarDelStockDelLibro()
+        {
+            // (tarea de leonardo)
+        }
 
+        
+        public void crearCliente(string unNombreUsuario, string password, string nombre, string apellido, string direccion, string email, int telefono)
+        {
+                        
+            String columnas = "(`cli_nu`,`cli_pass``cli_nombre`,`cli_apellido`,`cli_email`)";
+            String valores = unNombreUsuario + "," + password + "," + nombre + "," + apellido + "," +  email;
+            String tabla = "`clientes`";
+            String QueryEnTabla = "INSERT INTO `sistema_libros_cocina`." + tabla + columnas + " VALUES (" + valores + ");";
+            this.ejecutarQuery(QueryEnTabla);
+            tabla = "`dir_clientes`"; 
+            columnas = "(`dir_nu`,`dir_calle`)";
+            valores = unNombreUsuario + "," + direccion;
+            this.ejecutarQuery(QueryEnTabla);
+            tabla = "`tel_clientes`";
+            columnas = "(`tel_nu`,`tel_particular`)";
+            valores = unNombreUsuario + "," + telefono;
+            this.ejecutarQuery(QueryEnTabla);
+
+        }
+
+        public void eliminarCliente(string nombreUsuario)
+        {
+            // falta el drop cascade para eliminarlo de otras tablas
+            String Query = "DELETE FROM `sistema_libros_cocina`.`clientes` WHERE `cli_nu` = " + nombreUsuario + ";";
+            this.ejecutarQuery(Query);
+        }
+
+        public void agregarLibroAHistorialDeVentas()
+        {
+            //     TAREA SIN REALIZAR AUN
+        }
+
+        public void agregarTelefono()
+        {
+        //     SIN REALIZAR AUN
+        }
+
+        public void agregarDireccion()
+        {
+              //      SIN REALIZAR AUN
+        }
+
+        
+
+        
     }
-}

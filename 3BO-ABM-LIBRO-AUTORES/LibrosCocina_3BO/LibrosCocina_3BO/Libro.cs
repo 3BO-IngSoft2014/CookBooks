@@ -12,43 +12,63 @@ namespace LibrosCocina_3BO
 {
     public class Libro
     {
-        public int libro_id, autor_id, precio;
-        public String nombre, editorial;
+
         DBManager dbManager = new DBManager();
+        int isbn;
+        string nombre;
+        int stock;
+        string editorial;
+        int edicion;
+        int precio;
 
 
-        public Libro()
+        public Libro(int isbn, string nombre, int stock, string editorial, int edicion, int precio)
         {
-            dbManager.inicilizar();
-        }
-
-        public void altaLibro(int precio, string nombre, string editorial, int libro_id)
-        {
-            this.precio = precio;
+            this.isbn = isbn;
             this.nombre = nombre;
+            this.stock = stock;
             this.editorial = editorial;
-            this.libro_id = libro_id;
-            dbManager.inicilizar();
-            dbManager.crearLibro(nombre);
-        }
-
-        public void modificarLibro(int precio, string nombre, string editorial, int libro_id)
-        {
+            this.edicion = edicion;
             this.precio = precio;
-            this.nombre = nombre;
-            this.editorial = editorial;
-            this.libro_id = libro_id;
             dbManager.inicilizar();
-            dbManager.modificarLibro(nombre, precio, editorial, libro_id);
         }
 
-        public void bajaLibro(int libro_id)
+        public int getIsbn()
         {
-            this.libro_id = libro_id;
-            dbManager.inicilizar();
-            dbManager.eliminarLibro(libro_id);
+            return this.isbn;
         }
 
+        public void altaLibro()
+        {
+            dbManager.inicilizar();
+            dbManager.crearLibro(this.isbn, nombre, stock, editorial, precio);
+        }
+
+        public void modificarLibro(int isbn, string nombre, int stock, string editorial, int edicion, int precio)
+        {
+            // tanto para alta como para modificacion tengo que meter mas columnas en la bd
+            dbManager.inicilizar();
+            dbManager.modificarLibro(this.isbn, nombre, stock, editorial, edicion, precio);
+        }
+
+        public void bajaLibro(int isbn)
+        {
+
+            dbManager.inicilizar();
+            dbManager.eliminarLibro(isbn);
+        }
+
+        public void buscarLibrosMasVendidos()
+        {
+
+            //      tarea realizar por luciano
+        }
+
+
+        public string getNombre()
+        {
+            return this.nombre;
+        }
 
     }
 }

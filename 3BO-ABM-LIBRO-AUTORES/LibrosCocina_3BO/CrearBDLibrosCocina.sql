@@ -2,50 +2,52 @@
 create schema sistema_libros_cocina;
 
 
-CREATE TABLE sistema_libros_cocina.Libros (
 
-libro_id INT NOT NULL AUTO_INCREMENT ,
+CREATE TABLE  sistema_libros_cocina.Libros (
+ lib_id INT( 5 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+ lib_isbn INT( 13 ) NOT NULL ,
+ lib_nombre VARCHAR( 45 ) NOT NULL ,
+ lib_stock INT( 6 ) NOT NULL ,
+ lib_ventas INT( 6 ) NOT NULL ,
+ lib_editorial VARCHAR( 45 ) NOT NULL ,
+ lib_edicion INT( 2 ) NOT NULL,
+ lib_precio INT(4) NULL
+);
 
-autor_id INT NULL ,
 
-nombre VARCHAR(45) NULL ,
 
-precio INT NULL , 
+CREATE TABLE  sistema_libros_cocina.Autores (
+ aut_id INT( 5 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+ aut_nombre VARCHAR( 30 ) NOT NULL,
+ aut_apellido VARCHAR( 30 ) NOT NULL 
+);
 
-editorial VARCHAR(45) NULL ,
 
-PRIMARY KEY (libro_id) );
+CREATE TABLE  sistema_libros_cocina.Clientes (
+ cli_nu VARCHAR( 45 ) NOT NULL ,
+ cli_nombre VARCHAR( 45 ) NOT NULL ,
+ cli_apellido VARCHAR( 45 ) NOT NULL ,
+PRIMARY KEY (  cli_nu )
+);
 
-CREATE TABLE sistema_libros_cocina.Autores (
 
-autor_id INT NOT NULL AUTO_INCREMENT ,
 
-libro_id INT NULL ,
+CREATE TABLE  sistema_libros_cocina.Tel_clientes (
+ tel_nu VARCHAR( 45 ) NOT NULL ,
+ tel_particular INT( 45 ) NOT NULL ,
+PRIMARY KEY (  tel_nu ,  tel_particular )
+);
 
-nombre VARCHAR(45) NULL ,
 
-PRIMARY KEY (autor_id) );
-
-CREATE TABLE sistema_libros_cocina.Usuario(
-
-id_Usuario INT NOT NULL AUTO_INCREMENT ,
-
-is_Registrado CHAR(1) ,
-
-nombre VARCHAR(45) NULL , 
-
-apellido VARCHAR(45) NULL ,
-
-fecha_nac DATE ,
-
-email VARCHAR(45) ,
-
-telefono INT NULL ,
-
-direccion VARCHAR (45) ,
-
-PRIMARY KEY (id_Usuario) );
-
+CREATE TABLE  sistema_libros_cocina.Dir_clientes (
+ dir_nu VARCHAR( 45 ) NOT NULL ,
+ dir_calle VARCHAR( 45 ) NOT NULL ,
+ dir_nro INT( 6 ) NOT NULL ,
+ dir_localidad VARCHAR( 45 ) NOT NULL ,
+ dir_pcia VARCHAR( 45 ) NOT NULL ,
+ dir_pais VARCHAR( 45 ) NOT NULL ,
+PRIMARY KEY (  dir_nu ,  dir_calle  )
+);
 
 
 
