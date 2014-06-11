@@ -1,0 +1,10 @@
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\bin\Debug\Prueba.exe.config
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\bin\Debug\Prueba.exe
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\bin\Debug\Prueba.pdb
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.csprojResolveAssemblyReference.cache
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.Properties.Resources.resources
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.csproj.GenerateResource.Cache
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.exe
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.pdb
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.AgregarLibros.resources
+c:\users\juan\documents\visual studio 2013\Projects\Prueba\Prueba\obj\Debug\Prueba.LibrosMasVendidos.resources
