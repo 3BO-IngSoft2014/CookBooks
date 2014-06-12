@@ -41,3 +41,23 @@ C:\Users\ayelen\Desktop\Prueba\Prueba\obj\Debug\Prueba.EliminarUsuario.resources
 C:\Users\ayelen\Desktop\Prueba\Prueba\obj\Debug\Prueba.AgregarAutor.resources
 C:\Users\ayelen\Desktop\Prueba\Prueba\obj\Debug\Prueba.EliminarAutor.resources
 C:\Users\ayelen\Desktop\Prueba\Prueba\obj\Debug\Prueba.ListadoLibros.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\bin\Debug\Prueba.exe.config
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.exe
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.pdb
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.csprojResolveAssemblyReference.cache
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.AgregarAutor.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.AgregarPreguntasMasFrecuentes.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.AgregarLibros.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.AgregarUsuario.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.BorrarLibro.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.BusquedaPorBuscador.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.EliminarAutor.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.EliminarUsuario.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.LibrosMasVendidos.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.ListadoLibros.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.ModificarLibro.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.Properties.Resources.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.VerFAQ.resources
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.csproj.GenerateResource.Cache
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\bin\Debug\Prueba.exe
+C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\bin\Debug\Prueba.pdb
