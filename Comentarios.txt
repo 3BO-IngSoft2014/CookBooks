@@ -1,7 +1,17 @@
 SRS - Aprobado - 22/05
 Entrevistas - Aprobado - 22/05
 Cuestionarios - Aprobado - 22/05
-PGP y Riesgos - Sin corregir
+
+--------------------------
+En el PGP, ponen la informacion de los documentos de Riesgo PGP-Riesgos y PGP tratamientos, si lo ponen directamente en el PGP no hacenfalta los otros documentos (los docuemntos tienen la misma informacion).
+
+En el PGP tiene que corregir algunos detalles minimos.
+
+La parte de Riesgos tiene muchos errores, la tienen que corregir,  no esta definida la linea de corte, y hay una confusion importante con lo que son estrategia de mitigacion y plan de contingencia.
+
+Puede corregirla en el mismo PGP o sacarla del PGP y usar los dos docuemntos de riesgos.
+
+Docuemnto de Interfaces, Faltan los prototipos
 
 
 
