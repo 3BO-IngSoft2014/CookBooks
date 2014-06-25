@@ -61,3 +61,6 @@ C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueb
 C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.csproj.GenerateResource.Cache
 C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\bin\Debug\Prueba.exe
 C:\Users\ayelen\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\bin\Debug\Prueba.pdb
+C:\Users\Tupac\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\bin\Debug\Prueba.exe.config
+C:\Users\Tupac\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.exe
+C:\Users\Tupac\CookBooks\3BO- INTERFACES- segundo sprint\Prueba\obj\Debug\Prueba.pdb
