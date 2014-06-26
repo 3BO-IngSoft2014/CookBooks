@@ -1,8 +1,14 @@
+Barreto, Agustina Ayelen
+Bispo, Leonardo HÈCtor
+Brun, Tupac
+Olmedo, Luciano Federico
+-----------------------------------
 SRS - Aprobado - 22/05
 Entrevistas - Aprobado - 22/05
 Cuestionarios - Aprobado - 22/05
 
 --------------------------
+25/06
 En el PGP, ponen la informacion de los documentos de Riesgo PGP-Riesgos y PGP tratamientos, si lo ponen directamente en el PGP no hacenfalta los otros documentos (los docuemntos tienen la misma informacion).
 
 En el PGP tiene que corregir algunos detalles minimos.
@@ -13,5 +19,13 @@ Puede corregirla en el mismo PGP o sacarla del PGP y usar los dos docuemntos de 
 
 Docuemnto de Interfaces, Faltan los prototipos
 
+-----------------------------------
+26/06
+
+PGP - Aprobado
+
+Doc. Riesgos - Aprobado
+
+Doc. de Interface - Incompleto
 
 
